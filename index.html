@@ -1,0 +1,32 @@
+<canvas id="canvas" width="400" height="400"></canvas>
+
+<script>
+
+    // get canvas and context
+
+    var canvas = document.getElementById("canvas");
+
+    var ctx = canvas.getContext("2d");
+
+    // draw face
+
+    ctx.beginPath();
+
+    ctx.arc(200, 200, 150, 0, 2 * Math.PI, false); // head
+
+    ctx.moveTo(265, 200);
+
+    ctx.arc(200, 200, 65, 0, Math.PI, false); // mouth
+
+    ctx.moveTo(135, 165);
+
+    ctx.arc(100, 165, 35, 0, 2 * Math.PI, false); // left eye
+
+    ctx.moveTo(295, 165);
+
+    ctx.arc(260, 165, 35, 0, 2 * Math.PI, false); // right eye
+
+    ctx.stroke();
+
+</script>
+
